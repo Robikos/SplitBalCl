@@ -16,7 +16,7 @@ smote_type = sys.argv[3]
 data_positive = collection.find({"Class" : "positive"})
 data_negative = collection.find({"Class" : "negative"})
 
-values_keys = open("datasets/" + db_name +".csv", "r").readlines()[0].split(",")[0:-1]
+values_keys = open("datasets/final/" + db_name +".csv", "r").readlines()[0].split(",")[0:-1]
 
 # values_keys = ["Gvh", "Alm", "Pox", "Mcg", "Vac", "Nuc", "Erl", "Mit"]
 label_key = "Class"
